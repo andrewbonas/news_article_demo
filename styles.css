@@ -1,33 +1,28 @@
 @font-face {
-  font-family: 'nytFont';
-  src: url('assets/Chomsky.woff');
+  font-family: "nytFont";
+  src: url("assets/Chomsky.woff");
 }
 
-html {
-  width: 100%;
-}
-
-.brand{
-  font-family: 'nytFont';
+.brand {
+  font-family: "nytFont";
 }
 
 nav {
-  width: 100%;
   display: flex;
+  position: fixed;
+  height: 40px;
+  width: 100%;
   background: white;
   border-bottom: 0;
   margin: 0;
-  height: 40px;
   padding: 4px 15px 2px;
-  border-bottom: solid 1px rgb(180, 173, 173); 
-  position: fixed;
+  border-bottom: solid 1px rgb(180, 173, 173);
   top: 0;
 }
 
 nav .brand {
   padding: 0;
   margin: auto;
-
 }
 nav .left {
   background-color: transparent;
@@ -37,9 +32,8 @@ nav .left {
   font-size: 15px;
 }
 
-nav .sign-in {
+nav .button {
   margin-top: 0;
-  margin-right: 2%;
   padding: 9px;
   border-radius: 3px;
   text-align: center;
@@ -52,6 +46,10 @@ nav .sign-in {
   text-transform: uppercase;
 }
 
+nav .login {
+  margin-right: 30px;
+}
+
 .topper {
   max-width: 50%;
   padding: 50px;
@@ -60,15 +58,29 @@ nav .sign-in {
 
 .topper .title {
   font-size: 2rem;
-  font-family: 'times new roman';
+  font-family: "times new roman";
   line-height: 3rem;
   font-style: italic;
-    
+}
+
+.social-tags .fa {
+  margin: 3px;
+  border-radius: 60px;
+  background-color: rgb(238, 230, 230);
+  padding: 0.3em 0.3em;
+}
+
+.social-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin-left: -7%;
+  margin-bottom: -4%;
 }
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .main-body {
@@ -77,22 +89,7 @@ img {
   text-align: left;
   font-size: 1.25rem;
   line-height: 1.875rem;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.fa {
-  margin: 3px;
-  border-radius: 60px;
-  background-color: rgb(238, 230, 230);
-  padding: 0.3em 0.3em;
-}
-
-.social-tags{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  list-style-type: none;
-  margin-left: -7%;
+  font-family: "Times New Roman", Times, serif;
 }
 
 em {
@@ -102,10 +99,19 @@ em {
 .article-date {
   font-size: 15px;
 }
+
+.gallery-title {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
 .gallery {
   width: 70%;
   margin: auto;
+  color: rgb(43, 41, 41);
 }
+
 .image-gallery {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -138,10 +144,10 @@ em {
 
 .button-comment {
   padding: 0px 15px 0px 15px;
-  width: 45%;
+  width: 400px;
   height: 30px;
   font-size: 10px;
-  align-self: center;
+  margin-top: 27px;
   border: none;
   border-radius: 5px;
   background-color: steelblue;
@@ -168,19 +174,18 @@ footer {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
-
 }
-.bottom-line{
+.bottom-line {
   width: 90%;
 }
 .bottom {
   width: 90%;
-  font-family: 'nytFont';
+  font-family: "nytFont";
   margin-left: 5%;
 }
 
- .footer-links {
-  width: 90%;
+.footer-links {
+  width: 85%;
   margin: auto;
   margin-bottom: 20px;
   display: flex;
@@ -188,6 +193,10 @@ footer {
   justify-content: space-between;
   font-size: 11px;
   list-style-type: none;
+}
+
+.link6 {
+  border-left: 1px solid black;
 }
 
 .footer-links li a {
